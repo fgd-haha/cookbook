@@ -11,9 +11,10 @@ words2 = ['sdlf', 'kd', 'csd', 'kd', 'kd', 'kd', 'kd', 'book']
 c1 = Counter(words1)
 c2 = Counter(words2)
 
-print(c1)
-# most_common 返回出现次数超过入参的item
-print(c1.most_common(3))
+print(c1)  # Counter({'kd': 5, 'sfk': 4, 'sdlf': 4, 'sdkf': 1, 'csd': 1, 'book': 1})
+# most_common 返回数量最多的前n个item
+print(c1.most_common(1))  # [('kd', 5)]
+print(c1.most_common(3))  # [('kd', 5), ('sfk', 4), ('sdlf', 4)]
 # update可以增加计数
 c1.update(['fl', 'kd'])
 print(c1)

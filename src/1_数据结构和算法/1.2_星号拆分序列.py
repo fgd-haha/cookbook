@@ -15,8 +15,8 @@ def print_foo(x, y):
 
 
 for tag, *args in records:
-    print(*args)
-    print(args)
+    print(*args)  # 1 2
+    print(args)  # [1, 2]
     if tag == 'foo':
         print_foo(*args)
     elif tag == 'bar':

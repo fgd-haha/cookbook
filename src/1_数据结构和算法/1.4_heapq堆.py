@@ -1,6 +1,6 @@
 import heapq
 
-top_k = [1, 3, 5, 2, 4]
+top_k = [3, 1, 5, 2, 4]
 
 heapq.heapify(top_k)
 print(heapq.heappop(top_k))

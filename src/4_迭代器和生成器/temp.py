@@ -1,4 +1,4 @@
-with open('.\\temp.txt', 'r', encoding='utf-8') as f:
+with open('temp.txt', 'r', encoding='utf-8') as f:
     lines = f.readlines()
     for line in lines:
         l = line.strip()
